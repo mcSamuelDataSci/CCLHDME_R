@@ -1,0 +1,12 @@
+name: demoAPP
+title: demoAPP
+username:
+account: phdataviz
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 930410
+bundleId: 2085149
+url: https://phdataviz.shinyapps.io/demoAPP/
+when: 1557888739.32359
+asMultiple: FALSE
+asStatic: FALSE

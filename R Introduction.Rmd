@@ -1,0 +1,57 @@
+---
+title: "CCLHDME R Introduction"
+output: html_document
+date: "2022-07-12"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+what is R
+installing R
+what is R Studio
+installing R Studio
+simplest uses of R
+what are R packages
+installing R packages
+
+
+Training materials and resources
+
+
+a couple packages
+dplyr
+ggplot2
+readr
+tidyr
+some type of epi package
+
+use R script
+
+read some data
+manipulate some data
+plot some data
+
+? use R markdown
+
+
+
+
+
+example of rmarkdown report
+example of shiny app
+
+
+issues of R security
+
+
+Future topics
+more data manipulation
+R markdown
+R shiny
+
+
+
+
+
