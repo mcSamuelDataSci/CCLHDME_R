@@ -8,27 +8,24 @@ date: "2022-07-12"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+purpose of this markdown is to describe the plan for the workshop, share training material and links, and ???
 
-
-demo/workshop
-get started actually using R in a clean and simple way for real-world epidemiology and data management tasks
-except, a quick detor about objects
-
-cases       <- 232
-pop         <- 47233
-died        <- FALSE
-died_again  <- FALSEIFY
-some_county <- "Mono"
-some_cases  <- c(2343,434,43423)
-some_pops   <- c(434343,43432423,434334)
+clean/short/simple by Tuesday mid-day
 
 
 
+get started actually using R in a clean and **simple** way for real-world epidemiology and data management tasks
+(except, a quick detor about objects)
+
+learn by seeing and doing approach
+Many great resources for other approaches to learning R, and learning R for epidemiology
+
+SECURITY...
 
 
 
 
-THEN, go back and learn some fundamentals, priciple and options
+THEN, go back and learn some fundamentals, principle and options
 many ways to get data in
 multiple approach to "paths" and locations of data and otehr files
 many ways to load packages
@@ -37,19 +34,21 @@ many ways to make charts (base, ggplot2, plotly)
 infinite ways to analyze data
 
 
-
-
-
-
-
-[clean up our own stuff for easy installation -- email simple guide before meeting]
-
-
+/Jaspo
 what is R
 installing R
+Visit this website https://www.r-project.org/ and download the latest version of R suitable for your computer.
+
 
 what is R Studio
 installing R Studio
+Visit this website https://rstudio.com/products/rstudio/download/ and download the latest free Desktop version of RStudio suitable for your computer.
+
+[rstudio screen shot here]
+
+/end Jaspo
+
+
 
 simplest uses of R
 
@@ -59,13 +58,60 @@ installing R packages
 
 
 
-How to install R
 
-Visit this website https://www.r-project.org/ and download the latest version of R suitable for your computer.
 
-How to install RStudio
 
-Visit this website https://rstudio.com/products/rstudio/download/ and download the latest free Desktop version of RStudio suitable for your computer.
+
+
+
+
+(Future session) AND, may build sequentially on this staring point:
+functions
+markdown
+tables
+advanced data manipulation
+epidemiologic statistics and modeling
+shiny
+shiny with GIS
+etc...
+
+
+[objects in Environment panel]
+
+cases       <- 232
+pop         <- 47233
+died        <- FALSE
+died_again  <- FALSEIFY
+some_county <- "Mono"
+some_cases  <- c(2343,434,43423)
+some_pops   <- c(434343,43432423,434334)
+
+vectors
+
+data.frames (tibbles)
+
+lists 
+
+
+
+
+types of objects / classes / data types
+
+operators
+
+
+
+
+```{r}
+plot(1:20)
+```
+
+
+
+
+
+
+[clean up our own stuff for easy installation -- email simple guide before meeting]
 
 
 

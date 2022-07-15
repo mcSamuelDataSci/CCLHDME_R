@@ -26,6 +26,39 @@ some_pops   <- c(434343,43432423,434334)
 
 
 
+https://r4epi.github.io/epikit/
+install.packages("epikit")
+library("epikit")
+
+attack_rate()
+case_fatality_rate()
+mortality_rate()
+attack_rate(10, 50)
+#>   cases population ar    lower    upper
+#> 1    10         50 20 11.24375 33.03711
+case_fatality_rate(2, 50)
+#>   deaths population cfr    lower    upper
+#> 1      2         50   4 1.103888 13.46009
+mortality_rate(40, 50000)
+#>   deaths population mortality per 10 000   lower    upper
+#> 1     40      50000                    8 5.87591 10.89109
+In addition, it’s possible to rapidly calculate Case fatality rate from a linelist, stratified by different groups (e.g. gender):
+  
+  library("outbreaks")
+case_fatality_rate_df(ebola_sim_clean$linelist, 
+                      outcome == "Death", 
+                      group = gender,
+                      add_total = TRUE,
+                      mergeCI = TRUE
+)
+#> # A tibble: 3 x 5
+#>   gender deaths population   cfr ci            
+#>   <fct>   <int>      <int> <dbl> <chr>         
+#> 1 f        1291       2280  56.6 (54.58--58.64)
+#> 2 m        1273       2247  56.7 (54.59--58.69)
+#> 3 Total    2564       4527  56.6 (55.19--58.08)
+
+
 
 
 
@@ -39,11 +72,15 @@ county_deaths <- read.csv("https://data.chhs.ca.gov/dataset/58619b69-b3cb-41a7-8
 
 county_deaths <- junk
 
+
+myCounty <- "Mono"
+
+
 county_deaths_work <- county_deaths %>%
                         filter(Year == 2020,
                                Geography_Type == "Residence",
                                Cause == "ALL")
-
+https://github.com/reconverse/outbreaks
 library("outbreaks")
 junk <- ebola_sim$linelist
 library(summarytools)
