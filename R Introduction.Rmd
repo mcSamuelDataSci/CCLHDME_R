@@ -8,19 +8,26 @@ date: "2022-07-12"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-purpose of this markdown is to describe the plan for the workshop, share training material and links, and ???
 
-clean/short/simple by Tuesday mid-day
+[clean/short/simple by Tuesday mid-day]
+[Michael add info about SECURITY...]
+[clean up our own stuff for easy installation -- email simple guide before meeting]
+
+
+mcs - purpose of this markdown is to describe the plan for the workshop, share training material and links, and ???
 
 
 
-get started actually using R in a clean and **simple** way for real-world epidemiology and data management tasks
+mcs - get started actually using R in a clean and **simple** way for real-world epidemiology and data management tasks
+
+
+
 (except, a quick detor about objects)
 
 learn by seeing and doing approach
 Many great resources for other approaches to learning R, and learning R for epidemiology
 
-SECURITY...
+
 
 
 
@@ -34,37 +41,6 @@ many ways to make charts (base, ggplot2, plotly)
 infinite ways to analyze data
 
 
-/Jaspo
-what is R
-installing R
-Visit this website https://www.r-project.org/ and download the latest version of R suitable for your computer.
-
-
-what is R Studio
-installing R Studio
-Visit this website https://rstudio.com/products/rstudio/download/ and download the latest free Desktop version of RStudio suitable for your computer.
-
-[rstudio screen shot here]
-
-/end Jaspo
-
-
-
-simplest uses of R
-
-what are R packages
-installing R packages
-
-
-
-
-
-
-
-
-
-
-
 (Future session) AND, may build sequentially on this staring point:
 functions
 markdown
@@ -76,29 +52,94 @@ shiny with GIS
 etc...
 
 
-[objects in Environment panel]
+[Jaspo]
+what is R
+installing R
+Visit this website https://www.r-project.org/ and download the latest version of R suitable for your computer.
 
-cases       <- 232
-pop         <- 47233
-died        <- FALSE
-died_again  <- FALSEIFY
-some_county <- "Mono"
-some_cases  <- c(2343,434,43423)
-some_pops   <- c(434343,43432423,434334)
 
-vectors
+what is R Studio
+installing R Studio
+Visit this website https://rstudio.com/products/rstudio/download/ and download the latest free Desktop version of RStudio suitable for your computer.
 
-data.frames (tibbles)
-
-lists 
+[rstudio screen shot here]
+walk through R studio (and return to this ...  Environment; Help, Chart, View, later Git)
 
 
 
+[end Jaspo]
 
-types of objects / classes / data types
 
-operators
 
+simplest uses of R
+
+@ do some stuff in the console
+
+
+introduce, define, and show: Script files (IDE)
+
+
+
+
+@ script 1
+
+simplest objects R
+
+* atomic vectors (vector of length 1)
+  * data types
+    * numeric
+    * character
+    * logical (Boolean)
+
+@ script 2
+
+
+what are R packages
+installing R packages
+
+a few packages...
+
+dplyr
+ggplot2
+readr
+tidyr
+summarytools
+(outbreaks)
+("epikit") or epitools or something else
+lubridate
+
+
+for later:
+... for reading SAS files
+readr
+tmap
+tables...
+
+
+@ script 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* more R object types
+  *  data.frames (tibbles)
+  *  lists (lot covered today)
+
+* more about R objects
+  * classes
+  
+* operators
+  [link to operator page]
 
 
 
@@ -111,7 +152,6 @@ plot(1:20)
 
 
 
-[clean up our own stuff for easy installation -- email simple guide before meeting]
 
 
 
@@ -130,35 +170,23 @@ https://appliedepi.org/epirhandbook/
 
 https://tutorials.appliedepi.org/app/basics
 
-a couple packages
-dplyr
-ggplot2
-readr
-tidyr
-
-summarytools
+hadly data science book
+cheat sheets
+ytube
+tidyverse documentation
 
 
 
-some type of epi package
-
-use R script
-
-read some data
-manipulate some data
-[clean data....]
-plot some data
 
 
-script file
+Introduce markdown 
+define etc
+show markdown version of "script 3"
 [markdown file]
 
 
-? use R markdown
 
 
-
-library("outbreaks")
 
 example of rmarkdown report
 example of shiny app
