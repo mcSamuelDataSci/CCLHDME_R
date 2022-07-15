@@ -1,6 +1,3 @@
-WAYYYYYYYYYYYYYYY to much ....
-
-
 
 # the library() function loads needed packages for the current session
 #  these packages must have already been installed 
@@ -14,15 +11,6 @@ library(readr)   # tools for reading all sorts of data into R
 #######################################################################################################
 ## GETTING SOME DATA AND SETTING IT UP ################################################################
 
-
-
-cases       <- 232
-pop         <- 47233
-died        <- FALSE
-died_again  <- FALSEIFY
-some_county <- "Mono"
-some_cases  <- c(2343,434,43423)
-some_pops   <- c(434343,43432423,434334)
 
 
 
@@ -80,11 +68,7 @@ county_deaths_work <- county_deaths %>%
                         filter(Year == 2020,
                                Geography_Type == "Residence",
                                Cause == "ALL")
-https://github.com/reconverse/outbreaks
-library("outbreaks")
-junk <- ebola_sim$linelist
-library(summarytools)
-view(dfSummary(junk))
+
 
 names(county_deaths)
 

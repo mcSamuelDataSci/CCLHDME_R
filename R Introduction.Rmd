@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 [clean/short/simple by Tuesday mid-day]
 [Michael add info about SECURITY...]
 [clean up our own stuff for easy installation -- email simple guide before meeting]
-
+[We should revert our RStudios back to the default settings]
 
 mcs - purpose of this markdown is to describe the plan for the workshop, share training material and links, and ???
 
@@ -182,17 +182,16 @@ tidyverse documentation
 Introduce markdown 
 define etc
 show markdown version of "script 3"
+https://skylab.cdph.ca.gov/communityBurden/_w_21945fed/xMDA/2020_Excess_Mortality.html
 [markdown file]
 
 
 
 
-
-example of rmarkdown report
-example of shiny app
+Mention shiny 
 
 
-issues of R security
+
 
 
 Future topics

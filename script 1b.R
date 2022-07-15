@@ -1,14 +1,6 @@
 
 
 
-2 + 3
-
-
-2*pi
-
-
-
-
 cases       <- 232
 pop         <- 47233
 died        <- FALSE
@@ -20,3 +12,6 @@ some_pops   <- c(434343,43432423,434334)
 cases/pop
 
 some_cases / some_pops
+
+
+

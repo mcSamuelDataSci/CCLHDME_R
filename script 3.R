@@ -1,9 +1,17 @@
 
 https://github.com/reconverse/outbreaks
 library("outbreaks")
-junk <- ebola_sim$linelist
+
 library(summarytools)
-view(dfSummary(junk))
+
+ebola <- ebola_sierraleone_2014
+view(dfSummary(ebola))
+
+junk <- fluH7N9_china_2013
+view(dfSummary(rabies))
+
+
+
 
 
 
@@ -13,8 +21,17 @@ attack_rate(121, 555555, multiplier = 100000)
 
 
 
+data wrangling include summraizing N; probalby calcualte a Rate or something
+
 dply (tidyverse)
 
 pipe!!!
   
-gpplot
+  
+lubridate  to month/year
+
+
+
+
+  
+gpplot  ....  
