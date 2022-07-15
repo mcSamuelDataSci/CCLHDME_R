@@ -8,36 +8,111 @@ date: "2022-07-12"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+
+demo/workshop
+get started actually using R in a clean and simple way for real-world epidemiology and data management tasks
+except, a quick detor about objects
+
+cases       <- 232
+pop         <- 47233
+died        <- FALSE
+died_again  <- FALSEIFY
+some_county <- "Mono"
+some_cases  <- c(2343,434,43423)
+some_pops   <- c(434343,43432423,434334)
+
+
+
+
+
+
+
+THEN, go back and learn some fundamentals, priciple and options
+many ways to get data in
+multiple approach to "paths" and locations of data and otehr files
+many ways to load packages
+base R versus "tidyverse" (versus other things like data.table)
+many ways to make charts (base, ggplot2, plotly)
+infinite ways to analyze data
+
+
+
+
+
+
+
+[clean up our own stuff for easy installation -- email simple guide before meeting]
+
+
 what is R
 installing R
+
 what is R Studio
 installing R Studio
+
 simplest uses of R
+
 what are R packages
 installing R packages
 
 
-Training materials and resources
 
+
+How to install R
+
+Visit this website https://www.r-project.org/ and download the latest version of R suitable for your computer.
+
+How to install RStudio
+
+Visit this website https://rstudio.com/products/rstudio/download/ and download the latest free Desktop version of RStudio suitable for your computer.
+
+
+
+
+
+
+Training materials and resources
+https://appliedepi.org/
+https://appliedepi.org/tutorial/
+
+The Epidemiologist R Handbook
+https://www.epirhandbook.com/en/
+
+
+https://appliedepi.org/epirhandbook/
+
+https://tutorials.appliedepi.org/app/basics
 
 a couple packages
 dplyr
 ggplot2
 readr
 tidyr
+
+summarytools
+
+
+
 some type of epi package
 
 use R script
 
 read some data
 manipulate some data
+[clean data....]
 plot some data
+
+
+script file
+[markdown file]
+
 
 ? use R markdown
 
 
 
-
+library("outbreaks")
 
 example of rmarkdown report
 example of shiny app
@@ -50,6 +125,7 @@ Future topics
 more data manipulation
 R markdown
 R shiny
+GIS 
 
 
 

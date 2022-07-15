@@ -15,6 +15,75 @@ library(readr)   # tools for reading all sorts of data into R
 ## GETTING SOME DATA AND SETTING IT UP ################################################################
 
 
+
+cases       <- 232
+pop         <- 47233
+died        <- FALSE
+died_again  <- FALSEIFY
+some_county <- "Mono"
+some_cases  <- c(2343,434,43423)
+some_pops   <- c(434343,43432423,434334)
+
+
+
+
+
+
+
+junk <- read.csv("https://data.chhs.ca.gov/dataset/7a456555-87b9-4830-817c-72d72e628745/resource/f8bb67bf-923d-4d74-8714-dc2bcf5609b7/download/2021-11-29_deaths_final_2014_2020_state_year_sup.csv")
+
+
+
+county_deaths <- read.csv("https://data.chhs.ca.gov/dataset/58619b69-b3cb-41a7-8bfc-fc3a524a9dd4/resource/579cc04a-52d6-4c4c-b2df-ad901c9049b7/download/2021-11-29_deaths_final_2014_2020_county_year_sup.csv")
+
+
+county_deaths <- junk
+
+county_deaths_work <- county_deaths %>%
+                        filter(Year == 2020,
+                               Geography_Type == "Residence",
+                               Cause == "ALL")
+
+library("outbreaks")
+junk <- ebola_sim$linelist
+library(summarytools)
+view(dfSummary(junk))
+
+names(county_deaths)
+
+
+
+idData <- read.csv("https://data.chhs.ca.gov/dataset/03e61434-7db8-4a53-a3e2-1d4d36d6848d/resource/75019f89-b349-4d5e-825d-8b5960fc028c/download/odp_idb_2020_ddg_compliant.csv")
+
+idData <- read.csv("https://bit.ly/cali-id")
+
+library(dplyr)
+
+
+
+
+
+
+
+https://data.chhs.ca.gov/dataset/mssa-detail3
+
+hchi_mssa <- read.csv("https://oshpd-chhsagency.opendata.arcgis.com/datasets/CHHSAgency::mssa-detail.csv")
+
+
+read GeoJSON?
+library(geojsonR)
+
+# INPUT IS A PATH TO A FILE
+file_js = FROM_GeoJson(url_file_string = "feature_collection.geojson")
+
+
+
+library(geojsonsf)
+mySF <- geojson_sf("https://oshpd-chhsagency.opendata.arcgis.com/datasets/CHHSAgency::mssa-detail.geojson")
+
+
+
+
 # URL for California COVID-19 data on the CHHS Open Data Portal. NOTE: This data reflects past 30 days
 covid_re_url <- "https://data.chhs.ca.gov/dataset/f88f9d7f-635d-4334-9dac-4ce773afe4e5/resource/b500dae2-9e58-428e-b125-82c7e9b07abb/download/covid19demographicratecumulative.csv"
 
