@@ -10,152 +10,147 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 [clean/short/simple by Tuesday mid-day]
+
 [Michael add info about SECURITY...]
+
 [clean up our own stuff for easy installation -- email simple guide before meeting]
+
 [We should revert our RStudios back to the default settings]
 
-mcs - purpose of this markdown is to describe the plan for the workshop, share training material and links, and ???
 
+###  This R markdown document is a guide and tool for the workshop, and a way to share learning materials and other resources
 
+###  The learning approach is watching leader live demonstrations, then participants doing the same things live.  Staring with immediately using R and R Studio as basically as possible for practical things, then cycle "backwards" for some concepts and options, then applying/using those, and repeat. And, pointing out and linking to additional learning resources and tools at each stage. Sound good? 
 
-mcs - get started actually using R in a clean and **simple** way for real-world epidemiology and data management tasks
-
-
-
-(except, a quick detor about objects)
-
-learn by seeing and doing approach
-Many great resources for other approaches to learning R, and learning R for epidemiology
-
-
-
-
-
-
-THEN, go back and learn some fundamentals, principle and options
-many ways to get data in
-multiple approach to "paths" and locations of data and otehr files
-many ways to load packages
-base R versus "tidyverse" (versus other things like data.table)
-many ways to make charts (base, ggplot2, plotly)
-infinite ways to analyze data
-
-
-(Future session) AND, may build sequentially on this staring point:
-functions
-markdown
-tables
-advanced data manipulation
-epidemiologic statistics and modeling
-shiny
-shiny with GIS
-etc...
 
 
 [Jaspo]
-what is R
-installing R
-Visit this website https://www.r-project.org/ and download the latest version of R suitable for your computer.
+
+* what is R
+* installing R
+* Visit this website https://www.r-project.org/ and download the latest version of R suitable for your computer.
+* install R
 
 
-what is R Studio
-installing R Studio
-Visit this website https://rstudio.com/products/rstudio/download/ and download the latest free Desktop version of RStudio suitable for your computer.
+* what is R Studio
+* installing R Studio
+* Visit this website https://rstudio.com/products/rstudio/download/ and download the latest free Desktop version of RStudio suitable for your computer.
+* install R Studio
 
-[rstudio screen shot here]
-walk through R studio (and return to this ...  Environment; Help, Chart, View, later Git)
+* rstudio screen shot here
 
-
+* walk through R studio (and repeatedly return to this ...  Environment; Help, Chart, View, later Git)
+* overview of the R studio workspace
 
 [end Jaspo]
 
 
 
-simplest uses of R
-
-@ do some stuff in the console
-
-
-introduce, define, and show: Script files (IDE)
 
 
 
+@ script 1a (console)
 
-@ script 1
+* using R as a calculator
+* script files
 
-simplest objects R
+@ script 1b (console, then in script file)
 
-* atomic vectors (vector of length 1)
+* simplest **objects** in R
+  * vectors of length 1 (atomic vectors) 
+  * vectors
   * data types
     * numeric
     * character
     * logical (Boolean)
+* math with simple objects    
 
-@ script 2
 
+@ script 2 (console, then in script file)
 
+* reading some data
+* using a script file to save code and start a "program"
+* looking at that data
+  * names()
+  * table()
+  * plot with base R
+  * etc.
+  
 what are R packages
+
 installing R packages
 
-a few packages...
+@ script 3 (script file)
 
-dplyr
-ggplot2
-readr
-tidyr
-summarytools
-(outbreaks)
-("epikit") or epitools or something else
-lubridate
-
-
-for later:
-... for reading SAS files
-readr
-tmap
-tables...
-
-
-@ script 3
+* install a couple packages
+* read some data
+* wrangle some data
+* ggplot some data
 
 
 
+Some important concepts and options - Session 1
+
+* loading packages
+* reading data
+* R (mathmetical) operators
+* working with paths
+* base R
+  * indexing
+  * charts
+* tidyverse
+  * dplyr()
+    * verbs
+    * pipes
+  * ggplot2()
+  * readr()
+  * lubridate()
+* using an R Project
+* thousands of other packages
+  * summarytools()  - easy frequencies, "cross-tables", and summary of a data.frame
+  * outbreaks() - line-listed data from a bunch of real outbreaks
+  * epikit() or epitools() or something else 
 
 
-
-
-
-
-
-
-
-
+Some important concepts and options - Future sessions
 
 * more R object types
-  *  data.frames (tibbles)
-  *  lists (lot covered today)
-
-* more about R objects
-  * classes
-  
-* operators
-  [link to operator page]
-
+  *  data.frames and tibbles
+  *  lists 
+  *  class()
+* functions
+* markdown
+  * https://skylab.cdph.ca.gov/communityBurden/_w_21945fed/xMDA/2020_Excess_Mortality.html
+* tables
+* advanced data manipulation
+* epidemiologic statistics and modeling
+* shiny
+* shiny with GIS
+* thousands of other packages
+  * reading data
+    * EXCELL
+     * SAS  
+  * Shiny - interactive visualizations and web sites
+  * visual display
+  * epidemiology
+  * disease surveillance
+  * outbreaks
+  * GIS
+    * tmap()
+  * data analysis and modeling
+  * tables
+* GIT
 
 
 ```{r}
-plot(1:20)
+height <- rnorm(n=100, mean= 60, sd = 6)
+weight <- height*1.2 +  rnorm(n=100, mean= 10, sd = 6)
+hist(height, breaks=50)
+plot(height, weight)
 ```
 
 
-
-
-
-
-
-
-
-
+Many great resources for other approaches to learning R, and learning R for epidemiology
 
 
 Training materials and resources
@@ -171,34 +166,16 @@ https://appliedepi.org/epirhandbook/
 https://tutorials.appliedepi.org/app/basics
 
 hadly data science book
+
 cheat sheets
+
 ytube
+
 tidyverse documentation
 
 
 
 
-
-Introduce markdown 
-define etc
-show markdown version of "script 3"
-https://skylab.cdph.ca.gov/communityBurden/_w_21945fed/xMDA/2020_Excess_Mortality.html
-[markdown file]
-
-
-
-
-Mention shiny 
-
-
-
-
-
-Future topics
-more data manipulation
-R markdown
-R shiny
-GIS 
 
 
 
