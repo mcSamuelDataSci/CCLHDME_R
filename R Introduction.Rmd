@@ -8,6 +8,10 @@ date: "2022-07-12"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r}
+# clean with CSS
+  
+```
 
 [clean/short/simple by Tuesday mid-day]
 
@@ -43,9 +47,6 @@ knitr::opts_chunk$set(echo = TRUE)
 * overview of the R studio workspace
 
 [end Jaspo]
-
-
-
 
 
 
@@ -150,28 +151,35 @@ plot(height, weight)
 ```
 
 
-Many great resources for other approaches to learning R, and learning R for epidemiology
+### Many great resources for other approaches to learning R, and learning R for epidemiology
 
 
-Training materials and resources
-https://appliedepi.org/
-https://appliedepi.org/tutorial/
+Hadley Wickham R for Data Science book
 
-The Epidemiologist R Handbook
-https://www.epirhandbook.com/en/
+* https://r4ds.had.co.nz/
 
 
-https://appliedepi.org/epirhandbook/
+Applied Epi:
 
-https://tutorials.appliedepi.org/app/basics
+* Home: https://appliedepi.org/
+* The Epidemiologist R Handbook:  https://www.epirhandbook.com/en/
+* Free self-paced tutorial series: https://appliedepi.org/tutorial/
+  * need free account 
+  * basics:  https://tutorials.appliedepi.org/app/basics
+  * data preparation
+  * data cleaning
+  * basics of data visualization in R
+  * summary tables
 
-hadly data science book
 
-cheat sheets
+CCLHDME 2019 workshop
 
-ytube
+R Studio cheat sheets:  https://www.rstudio.com/resources/cheatsheets/
 
-tidyverse documentation
+Google
+
+YouTube
+
 
 
 
