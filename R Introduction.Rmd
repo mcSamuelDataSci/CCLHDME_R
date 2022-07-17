@@ -1,6 +1,8 @@
 ---
 title: "CCLHDME R Introduction"
-output: html_document
+output: 
+  html_document:
+    theme: united
 date: "2022-07-12"
 ---
 
@@ -11,6 +13,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 # clean with CSS
   
+
+
 ```
 
 [clean/short/simple by Tuesday mid-day]
@@ -33,53 +37,37 @@ knitr::opts_chunk$set(echo = TRUE)
 * what is R
 * installing R
 * Visit this website https://www.r-project.org/ and download the latest version of R suitable for your computer.
-* install R
+* & install R
 
 
 * what is R Studio
 * installing R Studio
 * Visit this website https://rstudio.com/products/rstudio/download/ and download the latest free Desktop version of RStudio suitable for your computer.
-* install R Studio
+* & install R Studio
+
+[15 minutes]
+
 
 * rstudio screen shot here
 
-* walk through R studio (and repeatedly return to this ...  Environment; Help, Chart, View, later Git)
-* overview of the R studio workspace
+* walk through / overview R studio (and repeatedly return to this ...  Environment; Help, Chart, View, later Git)
+
 
 [end Jaspo]
 
 
 
-@ script 1a (console)
-
-* using R as a calculator
-* script files
-
-@ script 1b (console, then in script file)
-
-* simplest **objects** in R
-  * vectors of length 1 (atomic vectors) 
-  * vectors
-  * data types
-    * numeric
-    * character
-    * logical (Boolean)
-* math with simple objects    
+@ script 1 (console and script)
 
 
 @ script 2 (console, then in script file)
 
-* reading some data
-* using a script file to save code and start a "program"
-* looking at that data
-  * names()
-  * table()
-  * plot with base R
-  * etc.
   
-what are R packages
+### what are R packages
 
-installing R packages
+#### installing R packages
+
+
 
 @ script 3 (script file)
 
@@ -90,30 +78,74 @@ installing R packages
 
 
 
-Some important concepts and options - Session 1
+# Concepts and options for Session 1
 
-* loading packages
-* reading data
-* R (mathmetical) operators
-* working with paths
+
+* using R as a calculator
+* script files
+* simplest **objects** in R
+  * vectors of length 1 (atomic vectors) 
+  * vectors
+  * data types
+    * numeric
+    * character
+    * logical (Boolean)
+
+* math with simple objects 
+
+* R (mathematical) operators
+
+
 * base R
   * indexing
   * charts
+  
+  
+* reading data
+
+* using a script file to save code and start a "program"
+
+* looking at that data
+  * names()
+  * table()
+  * plot with base R
+  * etc.
+
+* loading packages
+
+
+
 * tidyverse
   * dplyr()
-    * verbs
+    * verbs - [find best reference resource for this]
     * pipes
   * ggplot2()
   * readr()
   * lubridate()
-* using an R Project
+* using an R Project (?)
 * thousands of other packages
   * summarytools()  - easy frequencies, "cross-tables", and summary of a data.frame
   * outbreaks() - line-listed data from a bunch of real outbreaks
   * epikit() or epitools() or something else 
 
 
-Some important concepts and options - Future sessions
+
+
+
+joins (above or below)
+
+
+
+
+
+## Some important concepts and options - Future sessions
+
+* options for installing packages
+* working with paths (?)
+
+* data type precidence
+
+*  Rules and best practices for naming objects
 
 * more R object types
   *  data.frames and tibbles
@@ -122,10 +154,12 @@ Some important concepts and options - Future sessions
 * functions
 * markdown
   * https://skylab.cdph.ca.gov/communityBurden/_w_21945fed/xMDA/2020_Excess_Mortality.html
+* ifelse() and other logical evaluation
 * tables
 * advanced data manipulation
 * epidemiologic statistics and modeling
 * shiny
+* GIS
 * shiny with GIS
 * thousands of other packages
   * reading data
@@ -143,6 +177,21 @@ Some important concepts and options - Future sessions
 * GIT
 
 
+
+Some important concepts and options - Future sessions
+* apply and loops
+
+
+
+
+
+
+
+
+
+
+
+
 ```{r}
 height <- rnorm(n=100, mean= 60, sd = 6)
 weight <- height*1.2 +  rnorm(n=100, mean= 10, sd = 6)
@@ -151,7 +200,14 @@ plot(height, weight)
 ```
 
 
+
+[Jaspreet and michael both show finding info from the resouces below something like twice]
+
+
+
 ### Many great resources for other approaches to learning R, and learning R for epidemiology
+
+[Michael check]
 
 
 Hadley Wickham R for Data Science book
@@ -180,6 +236,11 @@ Google
 
 YouTube
 
+Stackoverflow   -- https://stackoverflow.com/
+
+
+
+https://community.rstudio.com/
 
 
 

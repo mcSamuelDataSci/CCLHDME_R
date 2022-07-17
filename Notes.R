@@ -1,4 +1,15 @@
 
+
+c(1, "Alpine", TRUE) # Converts elements to character type
+c(1, TRUE, FALSE) # Converts to numeric type - Underlying integer for TRUE is 1, FALSE is 0
+
+myVector + "County"
+paste(myVector, "County")
+
+
+
+
+
 # the library() function loads needed packages for the current session
 #  these packages must have already been installed 
 #  there are several ways to do this including:  install.packages("readr") etc.

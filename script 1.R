@@ -31,9 +31,6 @@ object.name <- 1
 object_name <- 1
 objectName <- 1 #camelCase
 
-# Remove objects ----
-rm(objectName)
-objectName
 
 # Data classes ----
 
@@ -100,10 +97,35 @@ values
 mean(values) # Returns NA due to one NA value
 mean(values, na.rm = TRUE) # Specify na.rm argument to TRUE, which removes NA value, then computes mean
 
+
+
+
 x_values <- 1:50
 x_values
 y_values <- x_values * 2
 y_values
+
+
+
+
+
+
+
+
+
+some_cases  <- c(2343,434,43423)
+some_pops   <- c(434343,43432423,434334)
+
+cases/pop
+
+some_cases / some_pops
+
+
+
+
+
+
+
 
 ?plot
 plot(x = x_values, y = y_values)

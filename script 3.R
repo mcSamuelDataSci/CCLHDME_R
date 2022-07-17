@@ -12,11 +12,6 @@ ebola <- ebola_sierraleone_2014
 
 view(dfSummary(ebola))
 
-junk <- fluH7N9_china_2013
-view(dfSummary(rabies))
-
-
-
 ebola <- ebola %>%
            mutate(good_date = as.Date(date_of_onset),
                   good_year = year(date_of_onset),
@@ -27,9 +22,6 @@ ebola1 <- ebola %>%
   summarize(N = n())
 
 
-ebola2 <- ebola %>% 
-           group_by(district, good_q) %>%
-           summarize(N = n())
 
 
 
