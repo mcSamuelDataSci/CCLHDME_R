@@ -1,4 +1,5 @@
 # Math operators ----
+4 + 2
 (2 + 5) * 4 / 3
 
 # Objects ----
@@ -10,7 +11,6 @@ A <- 7 * 7
 ratePer <- 1000
 5 / 5000 * ratePer
 4 / 2000 * ratePer
-6 / 7000 * ratePer
 
 # Data classes ----
 
@@ -41,20 +41,11 @@ c("Alpine", "Alameda", "Butte") # Character vector
 
 c(TRUE, FALSE) # Logical vector
 
-c(1, "Alpine", TRUE) # Converts elements to character type
-c(1, TRUE, FALSE) # Converts to numeric type - Underlying integer for TRUE is 1, FALSE is 0
-
 myVector <- c(4, 10, 8) # Store vectors as objects
 
 myVector ^ 2 # Operations on a vector
 myVector + 3
 myVector + myVector
-
-# Subsetting vectors ----
-# myVector[1] # Return 1st value
-# myVector[4] # Returns NA (Not Available) since vector only has 3 values
-# myVector[-1] # Return all values except the first
-# myVector[c(1, 2)] # Return 1st and 2nd value
 
 # Functions ----
 values <- c(1, 2, 3, 4, 5)
@@ -75,7 +66,8 @@ mean(values) # Returns NA due to one NA value
 
 mean(values, na.rm = TRUE) # Specify na.rm argument to TRUE, which removes NA value, then computes mean
 
-x_values <- 1:5
+
+x_values <- 1:50
 x_values
 y_values <- x_values * 2
 y_values
@@ -109,3 +101,10 @@ View(myData)
 
 str(myData)
 
+# Add this somewhere - Jaspreet to do
+# some_cases  <- c(2343,434,43423)
+# some_pops   <- c(434343,43432423,434334)
+# 
+# cases/pop
+# 
+# some_cases / some_pops
