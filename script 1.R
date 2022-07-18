@@ -22,14 +22,7 @@ ratePer <- 100000
 3 / 4000 * ratePer
 6 / 6000 * ratePer
 
-# Rules for naming objects ----
-1object <- 1
-object1 <- 1
-object! <- 1
-object name <- 1
-object.name <- 1
-object_name <- 1
-objectName <- 1 #camelCase
+
 
 
 # Data classes ----
@@ -42,7 +35,7 @@ objectName <- 1 #camelCase
 # Character (text) ----
 "R Workshop"
 'R Workshop'
-'Welcome to the first CCLHDME "R Workshop" '
+
 
 # Logical (TRUE, FALSE) ----
 TRUE
@@ -53,17 +46,19 @@ T # TRUE
 F  # FALSE
 
 # Data structures - Vectors ----
-c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10) # Numeric vector
+c(3, 8, 2, 4, 5, 6, 7, 9, 10) # Numeric vector
 c(1:10) # Shorter way to generate a sequence of values
 
 c("Alpine", "Alameda", "Butte") # Character vector
 c(Alpine, Alameda, Butte) # Error
+
+
+.. rateper ... 
+
 c(object_name, object.name, object1) # Vectors of objects with single values of same type
 
 c(TRUE, FALSE) # Logical vector
 
-c(1, "Alpine", TRUE) # Converts elements to character type
-c(1, TRUE, FALSE) # Converts to numeric type - Underlying integer for TRUE is 1, FALSE is 0
 
 myVector <- c(2, 3, 4) # Store vectors as objects
 
@@ -72,8 +67,7 @@ myVector + 3
 myVector + myVector
 
 myVector <- c("Alameda", "Alpine", "Butte")
-myVector + "County"
-paste(myVector, "County")
+
 
 # Subsetting vectors ----
 myVector[1] # Return 1st value
@@ -81,7 +75,7 @@ myVector[4] # Returns NA (Not Available) since vector only has 3 values
 myVector[-1] # Return all values except the first
 myVector[c(1, 2)] # Return 1st and 2nd value
 
-# Functions ----
+# Internal Functions ----
 values <- 1:50
 values
 length(values) # How many values are in the vector
@@ -99,20 +93,6 @@ mean(values, na.rm = TRUE) # Specify na.rm argument to TRUE, which removes NA va
 
 
 
-
-x_values <- 1:50
-x_values
-y_values <- x_values * 2
-y_values
-
-
-
-
-
-
-
-
-
 some_cases  <- c(2343,434,43423)
 some_pops   <- c(434343,43432423,434334)
 
@@ -123,7 +103,12 @@ some_cases / some_pops
 
 
 
+## Decide / dicuss below....
 
+x_values <- 1:50
+x_values
+y_values <- x_values * 2
+y_values
 
 
 
