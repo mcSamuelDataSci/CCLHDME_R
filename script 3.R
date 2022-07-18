@@ -2,11 +2,13 @@
 # https://github.com/reconverse/outbreaks
 
 library(dplyr)
-library(lubridate)
-library(zoo)
-library("outbreaks")
 library(summarytools)
 library(ggplot2)
+
+library(lubridate)
+library(zoo)
+library(outbreaks)
+
 
 ebola <- ebola_sierraleone_2014
 
@@ -22,9 +24,10 @@ ebola1 <- ebola %>%
   summarize(N = n())
 
 
+pop <- read.csv("sierra_leone.csv")
 
 
-
+junk <- full_join(ebola1,pop, by = c("district" = "District") )
 
 barplot(ebola2$N, names.arg= ebola2$good_q)
 

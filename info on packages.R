@@ -23,6 +23,18 @@ library(summarytools)
 require()
 
 
+#----------------------------------------------------------------------------------
+
+
+# Checks if package is installed, installs if necessary, and loads package for current session
+
+pacman::p_load(
+  lubridate,  # general package for handling and converting dates  
+  linelist,   # has function to "guess" messy dates
+  aweek,      # another option for converting dates to weeks, and weeks to dates
+  zoo,        # additional date/time functions
+  tidyverse,  # data management and visualization  
+  rio)        # data import/export
 
 
 
