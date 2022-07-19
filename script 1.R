@@ -41,6 +41,8 @@ vectorLogical <- c(TRUE, FALSE) # Logical vector
 vectorLogical
 
 vectorNum ^ 2 # Operations on a vector
+vectorNum + vectorNum
+
 
 # Functions ----
 mean(vectorNum)
@@ -51,6 +53,8 @@ vectorNum
 mean(vectorNum)
 ?mean
 mean(vectorNum, na.rm = TRUE)
+
+
 
 
 # Data structures - Data frames ----

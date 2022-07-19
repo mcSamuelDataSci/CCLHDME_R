@@ -25,6 +25,8 @@ max(idData$Year) #  Maximum
 table(idData$Year) # Frequency table
 
 
+
+
 # Install packages ----
 install.packages("ggplot2") # Popular visualization package
 library(ggplot2)
