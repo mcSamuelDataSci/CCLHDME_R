@@ -16,6 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 # clean with CSS
 
+# Paragraph text and font size - bigger
 
 ```
 
@@ -35,34 +36,35 @@ knitr::opts_chunk$set(echo = TRUE)
 [We should revert our RStudios back to the default settings]
 
 
-###  This R markdown document is a guide and tool for the workshop, and a way to share learning materials and other resources
+# Introduction
 
-###  The learning approach is watching leader live demonstrations, then participants doing the same things live.  Staring with immediately using R and R Studio as basically as possible for practical things, then cycle "backwards" for some concepts and options, then applying/using those, and repeat. And, pointing out and linking to additional learning resources and tools at each stage. Sound good? 
+This document serves as a guide and tool for the CCLHDME R Workshop, and is a way to share learning materials and other resources.
+
+The learning approach is watching leader live demonstrations, then participants doing the same things live.  Staring with immediately using R and R Studio as basically as possible for practical things, then cycle "backwards" for some concepts and options, then applying/using those, and repeat. And, pointing out and linking to additional learning resources and tools at each stage. Sound good? 
+
+# About R and RStudio
+
+**R** is an open source programming language for statistical computing graphics that you can use for a variety of data-related tasks such as cleaning, analyzing, visualizing, and modeling your data.
+
+**RStudio** is a free, open source IDE (integrated development environment) for R. Its interface is organized so that the user can clearly view graphs, data tables, R code, and outputs all at the same time. 
+
+Security Concerns...
+
+# Installing R
+
+[Download R from here] Visit this website https://www.r-project.org/ and download the latest version of R suitable for your computer.
+
+[Download RStudio from here] Visit this website https://rstudio.com/products/rstudio/download/ and download the latest free Desktop version of RStudio suitable for your computer.
+
+Click [here](https://rstudio-education.github.io/hopr/starting.html) for instructions on how to install R and RStudio.
+
 
 @ go over where the files for this workshop can be accessed etc.
-
-[Jaspo]
-* what is R
-* installing R
-* Visit this website https://www.r-project.org/ and download the latest version of R suitable for your computer.
-* & install R
-
-
-* what is R Studio
-* installing R Studio
-* Visit this website https://rstudio.com/products/rstudio/download/ and download the latest free Desktop version of RStudio suitable for your computer.
-* & install R Studio
-
-[15 minutes]
 
 
 * rstudio screen shot here
 
 * walk through / overview R studio (and repeatedly return to this ...  Environment; Help, Chart, View, later Git)
-
-
-[end Jaspo]
-
 
 
 @ script 1 (console and script)
