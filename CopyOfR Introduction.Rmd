@@ -19,60 +19,45 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-**[Jaspo comment: Please check "CopyOf..HTML" file. What do you think about the theme, adding a table of contents, and the Intro section? Also, did you you want me to list out the instructions for installing R/RStudio in Windows here in this document, or does providing the link to an instruction guide suffice?]**
+# Introduction
 
-[clean/short/simple by Tuesday mid-day]
+This document serves as a guide and tool for the CCLHDME R Workshop, and is a way to share learning materials and other resources.
 
-[Michael add info about SECURITY...]
+The learning approach is watching leader live demonstrations, then participants doing the same things live.  Staring with immediately using R and R Studio as basically as possible for practical things, then cycle "backwards" for some concepts and options, then applying/using those, and repeat. And, pointing out and linking to additional learning resources and tools at each stage. Sound good? 
 
-[clean up our own stuff for easy installation -- email simple guide before meeting]
+# About R and RStudio
 
-[We should revert our RStudios back to the default settings]
+**R** is an open source programming language for statistical computing graphics that you can use for a variety of data-related tasks such as cleaning, analyzing, visualizing, and modeling your data.
 
+**RStudio** is a free, open source IDE (integrated development environment) for R. Its interface is organized so that the user can clearly view graphs, data tables, R code, and outputs all at the same time. 
 
-###  This R markdown document is a guide and tool for the workshop, and a way to share learning materials and other resources
+Security Concerns...
 
-###  The learning approach is watching leader live demonstrations, then participants doing the same things live.  Staring with immediately using R and R Studio as basically as possible for practical things, then cycle "backwards" for some concepts and options, then applying/using those, and repeat. And, pointing out and linking to additional learning resources and tools at each stage. Sound good? 
+# Installing R
 
-
-
-[Jaspo]
-* what is R
-* installing R
-* Visit this website https://www.r-project.org/ and download the latest version of R suitable for your computer.
-* & install R
+Click [here](https://rstudio-education.github.io/hopr/starting.html) for instructions on how to install R and RStudio.
 
 
-* what is R Studio
-* installing R Studio
-* Visit this website https://rstudio.com/products/rstudio/download/ and download the latest free Desktop version of RStudio suitable for your computer.
-* & install R Studio
-
-[15 minutes]
 
 
-* rstudio screen shot here
-
-* walk through / overview R studio (and repeatedly return to this ...  Environment; Help, Chart, View, later Git)
 
 
-[end Jaspo]
+
+
 
 
 
 @ script 1 (console and script)
-**[Jaspo Comment: Should I put anything in here? We moved the items from here into the "Session 1" section]**
 
-@ script 2 (console, then in script file)
-**[Jaspo Comment: I won't be running any code in the R console in this script. In fact, due to limited time, I won't be live coding at all in this script. I'm just planning to walk-through the code.]**
+
+
+@ script 2 (console, then in script file) 
+
 
   
-### what are R packages
-**[Jaspo comment: I'll be explaining this in script 2]**
+### what are R packages 
 
 #### installing R packages
-**[Jaspo comment: I'll show how to install ggplot and dplyr in script 2]**
-
 
 
 @ script 3 (script file)
