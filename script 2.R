@@ -26,10 +26,16 @@ unique(idData$Disease) # Unique values of columns
 unique(idData$County)
 unique(idData$Sex)
 
+
 min(idData$Year)  # Minimum
 max(idData$Year) #  Maximum
 range(idData$Year) # Range
 table(idData$Year) # Frequency table
+
+
+
+
+
 
 # Install packages ----
 install.packages("ggplot2") # Popular visualization package

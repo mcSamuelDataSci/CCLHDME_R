@@ -21,6 +21,19 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
+## Introduction 
+
+### Introduction 
+
+#### Introduction 
+
+
+
+
+
+
+
+
 This document serves as a guide and tool for the CCLHDME R Workshop, and is a way to share learning materials and other resources.
 
 The learning approach is watching leader live demonstrations, then participants doing the same things live.  Staring with immediately using R and R Studio as basically as possible for practical things, then cycle "backwards" for some concepts and options, then applying/using those, and repeat. And, pointing out and linking to additional learning resources and tools at each stage. Sound good? 
