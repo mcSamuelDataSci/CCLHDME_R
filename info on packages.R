@@ -20,7 +20,13 @@ library(summarytools)
 # run something like below to check to see if installed; if not it will install
 # then it will load the packages like using library()
 
-require()
+
+
+## 1.1  packages
+.pkg	<- c("data.table","readr","readstata13","stringr","tidyr") 
+.inst   <- .pkg %in% installed.packages() 
+if(length(.pkg[!.inst]) > 0) install.packages(.pkg[!.inst]) 
+lapply(.pkg, require, character.only=TRUE)           
 
 
 #----------------------------------------------------------------------------------
