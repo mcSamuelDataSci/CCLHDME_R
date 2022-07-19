@@ -19,6 +19,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
+
+[have clean version of project folder zipped by x:00am Wednesday; email to attendees via Beth]
+[and on GitHub and michael's drive]
+
+
 **[Jaspo comment: Please check "CopyOf..HTML" file. What do you think about the theme, adding a table of contents, and the Intro section? Also, did you you want me to list out the instructions for installing R/RStudio in Windows here in this document, or does providing the link to an instruction guide suffice?]**
 
 [clean/short/simple by Tuesday mid-day]
@@ -34,7 +39,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ###  The learning approach is watching leader live demonstrations, then participants doing the same things live.  Staring with immediately using R and R Studio as basically as possible for practical things, then cycle "backwards" for some concepts and options, then applying/using those, and repeat. And, pointing out and linking to additional learning resources and tools at each stage. Sound good? 
 
-
+@ go over where the files for this workshop can be accessed etc.
 
 [Jaspo]
 * what is R
