@@ -15,26 +15,14 @@
 idData <- read.csv("https://bit.ly/cali-id") # Read in csv file
 
 # Functions to explore data ----
-dim(idData) # View the dimension
 head(idData) # Print out first few rows
-tail(idData) # Print out last few rows
 View(idData) # View the data frame
 str(idData) # View the structure
 names(idData) # View the column names
 
-unique(idData$Disease) # Unique values of columns
-unique(idData$County)
-unique(idData$Sex)
-
-
 min(idData$Year)  # Minimum
 max(idData$Year) #  Maximum
-range(idData$Year) # Range
 table(idData$Year) # Frequency table
-
-
-
-
 
 
 # Install packages ----
