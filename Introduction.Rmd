@@ -5,7 +5,7 @@ output:
     theme: sandstone
     toc: true
     toc_depth: 2
-    toc_float: true
+    toc_float: false
 date: "2022-07-12"
 ---
 
@@ -14,24 +14,12 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 <style>
-  h1{
-    font-size: 30px; 
-}
-  h2{
-    font-size: 26px;
-}
-  h3 {
-    font-size: 20px;
-}
-  p {
-    font-size: 16px;
-}
-  li {
-  font-size: 16px;
-}
-  ul {
-  font-size: 16px;
-}
+  h1 {font-size: 30px;}
+  h2 {font-size: 26px;}
+  h3 {font-size: 20px;}
+  p  {font-size: 16px;}
+  li {font-size: 16px;}
+  ul {font-size: 16px;}
 </style>
 
 
@@ -39,22 +27,14 @@ knitr::opts_chunk$set(echo = TRUE)
 [and on GitHub and michael's drive]
 
 
-**[Jaspo comment: Please check "CopyOf..HTML" file. What do you think about the theme, adding a table of contents, and the Intro section? Also, did you you want me to list out the instructions for installing R/RStudio in Windows here in this document, or does providing the link to an instruction guide suffice?]**
-
-[clean/short/simple by Tuesday mid-day]
-
-[Michael add info about SECURITY...]
-
-[clean up our own stuff for easy installation -- email simple guide before meeting]
-
 [We should revert our RStudios back to the default settings]
 
 
 # Introduction
 
-This document serves as a guide and tool for the CCLHDME R Workshop, and is a way to share learning materials and other resources.
+This document serves as a very general guide and tool for the CCLHDME R Workshop, and is a way to share learning materials and other resources.
 
-The learning approach is watching leader live demonstrations, then participants doing the same things live.  Staring with immediately using R and R Studio as basically as possible for practical things, then cycle "backwards" for some concepts and options, then applying/using those, and repeat. And, pointing out and linking to additional learning resources and tools at each stage. Sound good? 
+The learning approach is live demonstrations, with participants then doing the same steps live, as possible.  Staring with immediately using R and R Studio in the most basic ways for practical things, then cyclying "backwards" for some concepts and options, then applying/using those, and repeat. And, pointing out and linking to additional learning resources and tools at each stage. Sound good? 
 
 # About R and RStudio
 
@@ -62,23 +42,109 @@ The learning approach is watching leader live demonstrations, then participants 
 
 **RStudio** is a free, open source IDE (integrated development environment) for R. Its interface is organized so that the user can clearly view graphs, data tables, R code, and outputs all at the same time. 
 
-Security Concerns...
+# Since R is open source is it safe to use? What about our IT department's concerns?
+
+* all software has security issues
+* the teams that oversee R (CRAN and RStudio) both review and test everything before it goes public and have large incentives for security
+  * R and R Package Security [FAQ](https://support.rstudio.com/hc/en-us/articles/360042593974-R-and-R-Package-Security) for users or admins 
+* May consider only intalling "official" packages from "CRAN" rather than other "local" locations like on GitHub
+* At CDPH R and R Studio are approved, available, and widely used with both the "free" desktop versions and the enterprise, server-based version
+
+  
+
+# Concepts in this session 
+
+* Installing and loading R and R Studio
+
+* R Studio console
+* Using R as a calculator - mathematical operators
+* R script files ("programming in R")
+* Simple data objects in R
+* Math with simple objects 
+* Internal functions
+  * arguments
+  * "help" documentation
+* Base R          ?
+  * charts        ?
+* Reading data
+* Looking at data
+  * Common functions
+
+* Installing and loading packages
+* Tidyverse
+  * data wrangling
+    * dplyr and pipe
+    * joins
+  * ggplot2
+* Using an R Project ??????
+* Thousands of other packages
+  * summarytools  - easy frequencies, "cross-tables", and summary of a data.frame
+  * outbreaks - line-listed data from a bunch of real outbreaks
+  * epikit or epitools or something else 
+ 
+
+<hr><br>
+
+
+
+@ Jaspreet and michael both show finding info from the resouces below something like twice
+
+
+
+# Selected learning resources for R and R for epidemiology
+
+* Hadley Wickham R for Data Science book
+  * https://r4ds.had.co.nz/
+
+* Applied Epi
+  * Home: https://appliedepi.org/
+  * The Epidemiologist R Handbook:  https://www.epirhandbook.com/en/
+  * Free self-paced tutorial series: https://appliedepi.org/tutorial/
+    * need free account 
+    * basics:  https://tutorials.appliedepi.org/app/basics
+    * data preparation
+    * data cleaning
+    * basics of data visualization in R
+    * summary tables
+
+
+* CCLHDME 2019 workshop
+
+* R Studio cheat sheets:  https://www.rstudio.com/resources/cheatsheets/
+
+* Google
+
+* YouTube
+
+* Stackoverflow
+
+* https://community.rstudio.com/
+
+
+
+
+<br>
+<hr>
+
 
 # Installing R
 
-[Download R from here] Visit this website https://www.r-project.org/ and download the latest version of R suitable for your computer.
+Download R from the [r-project](https://www.r-project.org/);  download the latest version suitable for your computer.
 
-[Download RStudio from here] Visit this website https://rstudio.com/products/rstudio/download/ and download the latest free Desktop version of RStudio suitable for your computer.
+Download RStudio from [R Studio](https://rstudio.com/products/rstudio/download/) ;download the latest free Desktop version of RStudio suitable for your computer.
 
-Click [here](https://rstudio-education.github.io/hopr/starting.html) for instructions on how to install R and RStudio.
-
-
-@ go over where the files for this workshop can be accessed etc.
+If needed, for more instructions on how to install R and RStudio click [here](https://rstudio-education.github.io/hopr/starting.html).
 
 
-* rstudio screen shot here
 
-* walk through / overview R studio (and repeatedly return to this ...  Environment; Help, Chart, View, later Git)
+@@ go over where the files for this workshop can be accessed etc.
+
+
+@ rstudio screen shot here
+* Code
+* Console
+* Environment (plus)
+* Plots, Files, Help, Packages (plus)
 
 
 @ script 1 (console and script)
@@ -90,15 +156,9 @@ Click [here](https://rstudio-education.github.io/hopr/starting.html) for instruc
 
 @ script 2 (console, then in script file)
   
-### what are R packages
-**[Jaspo comment: I'll be explaining this in script 2]**
+* R packages
 
-#### installing R packages
-**[Jaspo comment: I'll show how to install ggplot and dplyr in script 2]**
-
-
-
-@ script 3 (script file)
+@ script 3 
 
 * install a couple packages
 * read some data
@@ -106,61 +166,19 @@ Click [here](https://rstudio-education.github.io/hopr/starting.html) for instruc
 * ggplot some data
 
 
-
-# Concepts and options for Session 1
-
-* R console
-* using R as a calculator - mathematical operators
-* R script files
-* simplest **data objects** in R
-* math with simple objects 
-
-* R (mathematical) operators
-
-* functions
-  * arguments
-  * "help" documentation
-
-* base R
-  * charts
-  
-* reading data
-
-* using a script file to save code and start a "program"
-
-* looking at that data
-  * common functions
-  * plot with base R
-  * etc.
-
-* installing and loading packages
-
-* tidyverse
-* using an R Project (?)
-* thousands of other packages
-  * summarytools  - easy frequencies, "cross-tables", and summary of a data.frame
-  * outbreaks - line-listed data from a bunch of real outbreaks
-  * epikit or epitools or something else 
-
-joins (above or below)
-
-## Some important concepts and options - Future sessions
+# Concepts for possilbe future sessions
 
 * options for installing packages
-* working with paths (?)
-
-* data type precidence
-
-*  Rules and best practices for naming objects
-
+* working with paths and folders
+* data type precedence
+* Rules and best practices for naming objects
 * more R object types
   *  data.frames and tibbles
   *  lists 
   *  class()
-  
 * subsetting/indexing
-* functions
-* markdown
+* User built functions
+* R markdown
   * https://skylab.cdph.ca.gov/communityBurden/_w_21945fed/xMDA/2020_Excess_Mortality.html
 * ifelse() and other logical evaluation
 * tables
@@ -183,21 +201,7 @@ joins (above or below)
   * data analysis and modeling
   * tables
 * GIT
-
-
-
-Some important concepts and options - Future sessions
 * apply and loops
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- ```{r} -->
@@ -206,55 +210,5 @@ Some important concepts and options - Future sessions
 <!-- hist(height, breaks=50) -->
 <!-- plot(height, weight) -->
 <!-- ``` -->
-
-
-
-[Jaspreet and michael both show finding info from the resouces below something like twice]
-
-
-
-### Many great resources for other approaches to learning R, and learning R for epidemiology
-
-[Michael check]
-
-
-Hadley Wickham R for Data Science book
-
-* https://r4ds.had.co.nz/
-
-
-Applied Epi:
-
-* Home: https://appliedepi.org/
-* The Epidemiologist R Handbook:  https://www.epirhandbook.com/en/
-* Free self-paced tutorial series: https://appliedepi.org/tutorial/
-  * need free account 
-  * basics:  https://tutorials.appliedepi.org/app/basics
-  * data preparation
-  * data cleaning
-  * basics of data visualization in R
-  * summary tables
-
-
-CCLHDME 2019 workshop
-
-R Studio cheat sheets:  https://www.rstudio.com/resources/cheatsheets/
-
-Google
-
-YouTube
-
-Stackoverflow   -- https://stackoverflow.com/
-
-
-
-https://community.rstudio.com/
-
-
-
-
-
-
-
 
 
