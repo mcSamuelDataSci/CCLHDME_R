@@ -25,18 +25,13 @@ knitr::opts_chunk$set(echo = TRUE)
 </style>
 
 
-[have clean version of project folder zipped by x:00am Wednesday; email to attendees via Beth]
-[and on GitHub and michael's drive]
-
-
-[We should revert our RStudios back to the default settings]
-
+<br>
 
 # Introduction
 
-This document serves as a very general guide and tool for the CCLHDME R Workshop, and is a way to share learning materials and other resources.
+This document serves as a very general guide and tool for the CCLHDME R Workshop. And it provide a way to share learning materials and other resources.
 
-The learning approach is live demonstrations, with participants then doing the same steps live, as possible.  Staring with immediately using R and R Studio in the most basic ways for practical things, then cyclying "backwards" for some concepts and options, then applying/using those, and repeat. And, pointing out and linking to additional learning resources and tools at each stage. Sound good? 
+The learning approach here is live demonstrations, with participants then doing the same steps live, as possible. Or just watching, and looking at the materials later. There are many different approaches, resources, styles, and preferance for learning R (or anything?).
 
 # Workshop materials
 
@@ -44,16 +39,16 @@ not essential but helpful....
 
 1. Download R_CCLHDME.zip from email and unzip in folder of your choosing, OR
 2. Go to this [GitHub repo](https://github.com/mcSamuelDataSci/CCLHDME_R), click on "Code" (green button), download zip folder, and unzip in folder of your choosing, OR
-3. Go to (Michael's Google drive) and download all files to folder of your choosing
+3. Go to (Micheal's Google drive) and download all files to folder of your choosing
 
-wait....  
+pause....  
 
 
 # About R and RStudio
 
-**R** is an open source programming language for statistical computing graphics that you can use for a variety of data-related tasks such as cleaning, analyzing, visualizing, and modeling your data.
+**R** is an open source programming language for data processing, data visualization, and statistical computing.
 
-**RStudio** is a free, open source IDE (integrated development environment) for R. Its interface is organized so that the user can clearly view graphs, data tables, R code, and outputs all at the same time. 
+**RStudio** is a free, open source tool that "sits on top" of R, and makes it easier and more efficient to use in all sorts of ways. Technically R Studio is an integrated development environment (IDE), that is organized so that users can clearly view graphs, data tables, R code, and outputs all at the same time. 
 
 # Since R is open source is it safe to use? What about our IT department's concerns?
 
@@ -135,27 +130,38 @@ wait....
 <hr>
 
 
-# Installing R
+# Installing R and R Studio
+
+<br>
 
 Download R from the [r-project](https://www.r-project.org/);  download the latest version suitable for your computer.
 
+
+
 Download RStudio from [R Studio](https://rstudio.com/products/rstudio/download/) ;download the latest free Desktop version of RStudio suitable for your computer.
+
 
 If needed, for more instructions on how to install R and RStudio click [here](https://rstudio-education.github.io/hopr/starting.html).
 
+<br>
 
+@ Workshop files
 
-@@ go over where the files for this workshop can be accessed etc.
+* Files in ??? S Studio pane
 
-@ JASPREET
-@@ Navigate to CCLHDME_R/ folder (either through the File Explorer or RStudio) where the workshop files are located and open "CCLHDME_R.Rproj"
+* "CCLHDME_R.Rproj"
+
+<br>
+
 
 @ rstudio screen shot here
+
 * Code
 * Console
 * Environment (plus)
 * Plots, Files, Help, Packages (plus)
 
+<br>
 
 @ script 1 (console and script)
 
@@ -163,11 +169,15 @@ If needed, for more instructions on how to install R and RStudio click [here](ht
 * objects
   * vectors
 
+<br>
+
 @ script 2 (console, then in script file)
   
 * R packages
 * read data
 * examine data
+
+<br>
 
 @ script 3 
 
@@ -175,8 +185,9 @@ If needed, for more instructions on how to install R and RStudio click [here](ht
 * wrangle some data
 * ggplot some data
 
+<br>
 
-# Concepts for possilbe future sessions
+# Concepts for possible future sessions
 
 * options for installing packages
 * working with paths and folders
@@ -186,7 +197,7 @@ If needed, for more instructions on how to install R and RStudio click [here](ht
   *  data.frames and tibbles
   *  lists 
   *  class()
-* subsetting/indexing
+* sub-setting/indexing
 * User built functions
 * R markdown
   * https://skylab.cdph.ca.gov/communityBurden/_w_21945fed/xMDA/2020_Excess_Mortality.html
