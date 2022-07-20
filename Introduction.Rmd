@@ -6,6 +6,7 @@ output:
     toc: true
     toc_depth: 2
     toc_float: false
+toc-title: "Table of Contents"
 date: "2022-07-12"
 ---
 
@@ -31,7 +32,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-This document serves as a very general guide and tool for the CCLHDME R Workshop. And it provide a way to share learning materials and other resources.
+This document serves as a very general guide and tool for the CCLHDME R Workshop. And it provides a way to share learning materials and other resources.
 
 The workshop learning approach is live demonstration, with participants then doing the same steps live, as possible. Or just watching, and looking at the materials later. There are many different approaches, resources, styles, and preferences for learning R (or anything?).
 
@@ -93,15 +94,14 @@ not essential but helpful....
 
 # *Selected* learning resources for R and R for epidemiology
 
-* Hadley Wickham R for Data Science book
-  * https://r4ds.had.co.nz/
+* [Hadley Wickham R for Data Science book](https://r4ds.had.co.nz/)
 
 * Applied Epi
-  * Home: https://appliedepi.org/
-  * The Epidemiologist R Handbook:  https://www.epirhandbook.com/en/
-  * Free self-paced tutorial series: https://appliedepi.org/tutorial/
+  * [Home](https://appliedepi.org/)
+  * [The Epidemiologist R Handbook](https://www.epirhandbook.com/en/)
+  * [Free self-paced tutorial series](https://appliedepi.org/tutorial/)
     * need free account 
-    * basics:  https://tutorials.appliedepi.org/app/basics
+    * [basics](https://tutorials.appliedepi.org/app/basics)
     * data preparation
     * data cleaning
     * basics of data visualization in R
@@ -109,8 +109,8 @@ not essential but helpful....
 
 * CCLHDME 2019 workshop 
 
-* R Studio cheat sheets:  https://www.rstudio.com/resources/cheatsheets/
-  * [dply - data wrangling cheatsheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf)
+* [R Studio cheat sheets](https://www.rstudio.com/resources/cheatsheets/):  
+  * [dplyr - data wrangling cheatsheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf)
 
 * Google
 
@@ -118,7 +118,7 @@ not essential but helpful....
 
 * Stackoverflow
 
-* https://community.rstudio.com/
+* [Rstudio community forum](https://community.rstudio.com/)
 
 
 
@@ -131,11 +131,11 @@ not essential but helpful....
 
 <br>
 
-Download R from the [r-project](https://cloud.r-project.org/);  download the latest version suitable for your computer. Click on the downloaded file and install using all defaults.
+Download R from the [r-project](https://cloud.r-project.org/); download the latest version suitable for your computer. Click on the downloaded file and install using all defaults.
 
 
 
-Download RStudio from [R Studio](https://www.rstudio.com/products/rstudio/download/#download) ;download the latest free Desktop version of RStudio suitable for your computer. Click on the downloaded file and install using all defaults.
+Download RStudio from [R Studio](https://www.rstudio.com/products/rstudio/download/#download); download the latest free Desktop version of RStudio suitable for your computer. Click on the downloaded file and install using all defaults.
 
 
 If needed, for more instructions on how to install R and RStudio click [here](https://rstudio-education.github.io/hopr/starting.html).
@@ -202,7 +202,7 @@ If needed, for more instructions on how to install R and RStudio click [here](ht
 * sub-setting/indexing
 * User built functions
 * R markdown
-  * https://skylab.cdph.ca.gov/communityBurden/_w_21945fed/xMDA/2020_Excess_Mortality.html
+  * [Example of report produced in R markdown](https://skylab.cdph.ca.gov/communityBurden/_w_21945fed/xMDA/2020_Excess_Mortality.html)
 * ifelse() and other logical evaluation
 * tables
 * advanced data manipulation
