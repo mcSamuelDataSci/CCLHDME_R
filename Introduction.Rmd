@@ -18,8 +18,10 @@ knitr::opts_chunk$set(echo = TRUE)
   h2 {font-size: 26px;}
   h3 {font-size: 20px;}
   p  {font-size: 16px;}
-  li {font-size: 16px;}
+  li {font-size: 16px; margin: 2px 2px;}
+  li p {margin: 2px 2px;}
   ul {font-size: 16px;}
+  a  {color: blue;}
 </style>
 
 
@@ -40,9 +42,9 @@ The learning approach is live demonstrations, with participants then doing the s
 
 not essential but helpful....
 
-1. download R_CCLHDME.zip from email and unzip in folder of you choosing, OR
-2. go [GitHub], download ZIPPPPPPPPP, and unzip...
-3. go to (Michael's doogle drive) and download all files to folder of your choosing
+1. Download R_CCLHDME.zip from email and unzip in folder of your choosing, OR
+2. Go to this [GitHub repo](https://github.com/mcSamuelDataSci/CCLHDME_R), click on "Code" (green button), download zip folder, and unzip in folder of your choosing, OR
+3. Go to (Michael's Google drive) and download all files to folder of your choosing
 
 wait....  
 
@@ -58,10 +60,8 @@ wait....
 * all software has security issues
 * the teams that oversee R (CRAN and RStudio) both review and test everything before it goes public and have large incentives for security
   * R and R Package Security [FAQ](https://support.rstudio.com/hc/en-us/articles/360042593974-R-and-R-Package-Security) for users or admins 
-* May consider only intalling "official" packages from "CRAN" rather than other "local" locations like on GitHub
+* May consider only installing "official" packages from "CRAN" rather than other "local" locations like on GitHub
 * At CDPH R and R Studio are approved, available, and widely used with both the "free" desktop versions and the enterprise, server-based version
-
-  
 
 # Concepts in this session 
 
@@ -148,11 +148,7 @@ If needed, for more instructions on how to install R and RStudio click [here](ht
 @@ go over where the files for this workshop can be accessed etc.
 
 @ JASPREET
-@@ go to folder where workshop files located and open "CCLHDME_R.Rproj" OR
-@@ in Studio navigate to the folder....
-
-
-
+@@ Navigate to CCLHDME_R/ folder (either through the File Explorer or RStudio) where the workshop files are located and open "CCLHDME_R.Rproj"
 
 @ rstudio screen shot here
 * Code
