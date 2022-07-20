@@ -7,7 +7,6 @@
 # .sas7dat    - read_sas (haven package) 
 
 
-
 # Read in data ----
 idData <- read.csv("https://bit.ly/cali-id") # Read in csv file
 
