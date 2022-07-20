@@ -36,13 +36,7 @@ This document serves as a very general guide and tool for the CCLHDME R Workshop
 
 The workshop learning approach is live demonstration, with participants then doing the same steps live, as possible. Or just watching, and looking at the materials later. There are many different approaches, resources, styles, and preferences for learning R (or anything?).
 
-# Workshop materials
 
-not essential but helpful....
-
-1. Download R_CCLHDME.zip from email and unzip in folder of your choosing, OR
-2. Go to this [GitHub repo](https://github.com/mcSamuelDataSci/CCLHDME_R), click on "Code" (green button), download zip folder, and unzip in folder of your choosing, OR
-3. Go to (Michael's Google drive) and download all files to folder of your choosing
 
 
 # About R and RStudio
@@ -126,6 +120,13 @@ not essential but helpful....
 <br>
 <hr>
 
+# Workshop materials
+
+not essential but helpful....
+
+1. Download R_CCLHDME.zip from email and unzip in folder of your choosing, OR
+2. Go to this [GitHub repo](https://github.com/mcSamuelDataSci/CCLHDME_R), click on "Code" (green button), download zip folder, and unzip in folder of your choosing, OR
+3. Go to (Michael's Google drive) and download all files to folder of your choosing
 
 # Installing R and R Studio
 

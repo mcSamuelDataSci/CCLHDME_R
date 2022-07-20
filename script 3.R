@@ -1,27 +1,26 @@
 
-library(dplyr)
-library(zoo)
-library(summarytools)
-library(ggplot2)
+# load some packages we will need
 
-# library("outbreaks")
+library(dplyr) # data wrangling
+library(zoo)  # date manipulation
+library(summarytools) # frequencies, cross tabs, summaries
+library(ggplot2) # visualization
 
 
-# library(janitor)
-# clean_names()
-# library(lubridate)
-
-# Note: all data "wrangling here using tidyverse dplyr
+# library(janitor) # many useful functions (e.g. clean_names()
+# library(lubridate) # working with dates
+# library(stringr) # working with strings
 
 
 
+# Note: all "data wrangling" below here using tidyverse dplyr
+
+
+# library("outbreaks") # outbreak data sets
 # get "built-in" data set from outbreak package
 full_data <- ebola_sierraleone_2014  
 
 
-
-
-# click on full_data in environment 
 
 view(dfSummary(full_data)) # from summarytools package
 
