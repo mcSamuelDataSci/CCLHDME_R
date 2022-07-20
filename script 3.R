@@ -1,11 +1,10 @@
 
-
 library(dplyr)
 library(zoo)
 library(summarytools)
 library(ggplot2)
-# library("outbreaks")
 
+# library("outbreaks")
 
 
 # library(janitor)
@@ -70,6 +69,10 @@ ggplot(data=district_data, aes(x=district, y = N)) + # core ggplot set up
 
 
 
+
+
+
+
 # grouping by (group_by) district and year-month 
 district_time_data  <- good_data %>% 
   group_by(district, onset_yr_mo) %>%
@@ -81,6 +84,11 @@ ggplot(data=district_time_data, aes(x=onset_yr_mo, y = N, col=district )) +
 
 
 
+
+
+
+
+
 # read in Sierra Leone population data
 pop_dat <- read.csv("sierra_leone.csv")
 
@@ -88,13 +96,5 @@ pop_dat <- read.csv("sierra_leone.csv")
 # calculate rate with mutate
 rate_data  <- full_join(district_data, pop_dat, by= c("district" = "District")) %>%
                 mutate(Rate = N*100000/Population)
-
-
-
-
-
-install.packages("epikit")
-library("epikit")
-attack_rate(121, 555555, multiplier = 100000)
 
 
