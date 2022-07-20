@@ -20,11 +20,7 @@ library(ggplot2) # visualization
 # get "built-in" data set from outbreak package
 full_data <- ebola_sierraleone_2014  
 
-
-
 view(dfSummary(full_data)) # from summarytools package
-
-
 
 
 # *filter* rows based on condition
