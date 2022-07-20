@@ -16,7 +16,7 @@ library(ggplot2) # visualization
 # Note: all "data wrangling" below here using tidyverse dplyr
 
 
-# library("outbreaks") # outbreak data sets
+library("outbreaks") # outbreak data sets
 # get "built-in" data set from outbreak package
 full_data <- ebola_sierraleone_2014  
 
@@ -24,8 +24,8 @@ view(dfSummary(full_data)) # from summarytools package
 
 
 # *filter* rows based on condition
-just_confirmed <- filter(ebolaOutbreak0, status == "confirmed")    
-just_confirmed <- ebolaOutbreak0 %>% filter(status == "confirmed") 
+just_confirmed <- filter(full_data, status == "confirmed")    
+just_confirmed <- full_data %>% filter(status == "confirmed") 
 
 # *select* columns and rename a couple at the same time
 just_some_variables <- full_data %>% 
@@ -40,7 +40,7 @@ full_data_plus  <- full_data %>%
 
 
 # "piping" the steps above into one step with %>%
-good_data  <- ebolaOutbreak0 %>% 
+good_data  <- full_data %>% 
                  filter(status == "confirmed") %>%
                  select(age, status, onset = date_of_onset, district ) %>%
                  mutate(onset_yr_mo = as.yearmon(onset))  
@@ -74,11 +74,13 @@ district_time_data  <- good_data %>%
   summarize(N = n() )
 
 # line chart...
-ggplot(data=district_time_data, aes(x=onset_yr_mo, y = N, col=district )) + 
+ggplot(data=district_time_data, aes(x=onset_yr_mo, y = N, color=district )) + 
        geom_line(size=1.2)
 
 
-
+ggplot(data=district_time_data, aes(x=onset_yr_mo, y = N)) + 
+  geom_line(size=1) +
+  facet_grid(rows=vars(district), scales="free")
 
 
 

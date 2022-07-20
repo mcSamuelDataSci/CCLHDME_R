@@ -126,11 +126,13 @@ not essential but helpful....
 
 1. Download R_CCLHDME.zip from email and unzip in folder of your choosing, OR
 2. Go to this [GitHub repo](https://github.com/mcSamuelDataSci/CCLHDME_R), click on "Code" (green button), download zip folder, and unzip in folder of your choosing, OR
-3. Go to (Michael's Google drive) and download all files to folder of your choosing
+3. Go to Michael's [Google drive](https://drive.google.com/drive/folders/16TNHsuO_7MBptRCftp-mEfRfOhYkvTT-?usp=sharing) and download all files to folder of your choosing
+
+<br>
 
 # Installing R and R Studio
 
-<br>
+
 
 Download R from the [r-project](https://cloud.r-project.org/); download the latest version suitable for your computer. Click on the downloaded file and install using all defaults.
 
@@ -145,7 +147,7 @@ If needed, for more instructions on how to install R and RStudio click [here](ht
 
 # Just Do It!
 
-<br>
+
 
 @ Studio and workshop files
 
