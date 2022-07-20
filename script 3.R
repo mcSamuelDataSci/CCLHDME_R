@@ -1,15 +1,10 @@
 
 
 library(dplyr)
-
-
-load packages...
-
-
 library(zoo)
 library(summarytools)
 library(ggplot2)
-library("outbreaks")
+# library("outbreaks")
 
 
 
@@ -27,27 +22,10 @@ full_data <- ebola_sierraleone_2014
 
 
 
-head(full_data) # Print out first few rows
-View(full_data) # View the data frame
-#str(full_data) # View the structure
-names(full_data) # View the column names
-
-min(full_data$age)  # Minimum
-table(full_data$district) # Frequency table
-
-
-
-
-
-
-
-
-
-
-
 # click on full_data in environment 
 
 view(dfSummary(full_data)) # from summarytools package
+
 
 
 

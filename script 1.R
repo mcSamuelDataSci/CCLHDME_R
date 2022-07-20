@@ -53,19 +53,3 @@ vectorNum
 mean(vectorNum)
 ?mean
 mean(vectorNum, na.rm = TRUE)
-
-
-
-
-# Data structures - Data frames ----
-
-data("iris")
-View(iris) # View data frame in RStudio
-
-iris$Sepal.Ratio <- iris$Sepal.Length / iris$Sepal.Width # Create new column
-View(iris)
-
-plot(iris$Sepal.Length, iris$Petal.Length)
-
-boxplot(iris$Sepal.Length ~ iris$Species)
-
