@@ -36,6 +36,17 @@ This document serves as a very general guide and tool for the CCLHDME R Workshop
 
 The learning approach is live demonstrations, with participants then doing the same steps live, as possible.  Staring with immediately using R and R Studio in the most basic ways for practical things, then cyclying "backwards" for some concepts and options, then applying/using those, and repeat. And, pointing out and linking to additional learning resources and tools at each stage. Sound good? 
 
+# Workshop materials
+
+not essential but helpful....
+
+1. download R_CCLHDME.zip from email and unzip in folder of you choosing, OR
+2. go [GitHub], download ZIPPPPPPPPP, and unzip...
+3. go to (Michael's doogle drive) and download all files to folder of your choosing
+
+wait....  
+
+
 # About R and RStudio
 
 **R** is an open source programming language for statistical computing graphics that you can use for a variety of data-related tasks such as cleaning, analyzing, visualizing, and modeling your data.
@@ -87,10 +98,6 @@ The learning approach is live demonstrations, with participants then doing the s
 
 
 
-@ Jaspreet and michael both show finding info from the resouces below something like twice
-
-
-
 # Selected learning resources for R and R for epidemiology
 
 * Hadley Wickham R for Data Science book
@@ -111,6 +118,7 @@ The learning approach is live demonstrations, with participants then doing the s
 * CCLHDME 2019 workshop
 
 * R Studio cheat sheets:  https://www.rstudio.com/resources/cheatsheets/
+  * [dply - data wrangling cheatsheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf)
 
 * Google
 
@@ -139,6 +147,12 @@ If needed, for more instructions on how to install R and RStudio click [here](ht
 
 @@ go over where the files for this workshop can be accessed etc.
 
+@ JASPREET
+@@ go to folder where workshop files located and open "CCLHDME_R.Rproj" OR
+@@ in Studio navigate to the folder....
+
+
+
 
 @ rstudio screen shot here
 * Code
@@ -152,16 +166,16 @@ If needed, for more instructions on how to install R and RStudio click [here](ht
 * operators 
 * objects
   * vectors
-  * data frames
 
 @ script 2 (console, then in script file)
   
 * R packages
+* read data
+* examine data
 
 @ script 3 
 
-* install a couple packages
-* read some data
+* install more  packages
 * wrangle some data
 * ggplot some data
 

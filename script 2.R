@@ -27,7 +27,12 @@ library("outbreaks")
 # .txt
 # .sas7dat - haven package...
 
+# also....some data are "already in R" or in R packages....
 
+# Read in data ----
+idData <- read.csv("https://bit.ly/cali-id") # Read in csv file
+
+view....
 
 # Get some data
 library("outbreaks")
