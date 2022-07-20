@@ -2,6 +2,7 @@ add "Contents" above TOC?, and <br> above TOC?
   
 review items in "Concepts in this session", likey delete a couple
 
+possibly more step by step instruction to download and install R??
 
 [have clean version of project folder zipped by x:00am Wednesday; email to attendees via Beth] [and on GitHub and michael’s drive]
 
