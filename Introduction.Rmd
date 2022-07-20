@@ -14,14 +14,16 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 <style>
-  h1 {font-size: 30px;}
+  h1 {font-size: 26px;}
   h2 {font-size: 26px;}
   h3 {font-size: 20px;}
-  p  {font-size: 16px;}
-  li {font-size: 16px; margin: 2px 2px;}
+  p  {font-size: 18px;}
+  li {font-size: 18px; margin: 2px 2px;}
   li p {margin: 2px 2px;}
-  ul {font-size: 16px;}
+  ul {font-size: 18px;}
   a  {color: blue;}
+  #TOC {margin-top: 50px;}
+  
 </style>
 
 
@@ -31,7 +33,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This document serves as a very general guide and tool for the CCLHDME R Workshop. And it provide a way to share learning materials and other resources.
 
-The learning approach here is live demonstrations, with participants then doing the same steps live, as possible. Or just watching, and looking at the materials later. There are many different approaches, resources, styles, and preferance for learning R (or anything?).
+The workshop learning approach is live demonstration, with participants then doing the same steps live, as possible. Or just watching, and looking at the materials later. There are many different approaches, resources, styles, and preferences for learning R (or anything?).
 
 # Workshop materials
 
@@ -40,8 +42,6 @@ not essential but helpful....
 1. Download R_CCLHDME.zip from email and unzip in folder of your choosing, OR
 2. Go to this [GitHub repo](https://github.com/mcSamuelDataSci/CCLHDME_R), click on "Code" (green button), download zip folder, and unzip in folder of your choosing, OR
 3. Go to (Michael's Google drive) and download all files to folder of your choosing
-
-pause....  
 
 
 # About R and RStudio
@@ -66,34 +66,32 @@ pause....
 * Using R as a calculator - mathematical operators
 * R script files ("programming in R")
 * Simple data objects in R
-* Math with simple objects 
-* Internal functions
+* Built-in functions
   * arguments
   * "help" documentation
-* Base R          ?
-  * charts        ?
+* Base R  
 * Reading data
 * Looking at data
   * Common functions
 
 * Installing and loading packages
-* Tidyverse
-  * data wrangling
-    * dplyr and pipe
-    * joins
-  * ggplot2
-* Using an R Project ??????
+  * Tidyverse
+    * data wrangling
+    * visualization
+
 * Thousands of other packages
   * summarytools  - easy frequencies, "cross-tables", and summary of a data.frame
   * outbreaks - line-listed data from a bunch of real outbreaks
-  * epikit or epitools or something else 
- 
+  * epitools
+  * epikit
+  * surveillance  (temporal and spatio-temporal modeling and monitoring of epidemic phenomena)
+  
 
 <hr><br>
 
 
 
-# Selected learning resources for R and R for epidemiology
+# *Selected* learning resources for R and R for epidemiology
 
 * Hadley Wickham R for Data Science book
   * https://r4ds.had.co.nz/
@@ -109,8 +107,7 @@ pause....
     * basics of data visualization in R
     * summary tables
 
-
-* CCLHDME 2019 workshop
+* CCLHDME 2019 workshop 
 
 * R Studio cheat sheets:  https://www.rstudio.com/resources/cheatsheets/
   * [dply - data wrangling cheatsheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf)
@@ -134,27 +131,31 @@ pause....
 
 <br>
 
-Download R from the [r-project](https://cloud.r-project.org/);  download the latest version suitable for your computer.
+Download R from the [r-project](https://cloud.r-project.org/);  download the latest version suitable for your computer. Click on the downloaded file and install using all defaults.
 
 
 
-Download RStudio from [R Studio](https://www.rstudio.com/products/rstudio/download/#download) ;download the latest free Desktop version of RStudio suitable for your computer.
+Download RStudio from [R Studio](https://www.rstudio.com/products/rstudio/download/#download) ;download the latest free Desktop version of RStudio suitable for your computer. Click on the downloaded file and install using all defaults.
 
 
 If needed, for more instructions on how to install R and RStudio click [here](https://rstudio-education.github.io/hopr/starting.html).
 
 <br>
 
-@ Workshop files
+# Just Do It!
 
-* Files in ??? S Studio pane
+<br>
 
-* "CCLHDME_R.Rproj"
+@ Studio and workshop files
+
+* navigate to workshop materials folder and click on "CCLHDME_R.Rproj". This will bring you into R Studio in the workshop "project". OR,
+
+* open R Studio with a desktop icon or by otherwise (e.g. via the programs listed in the "Start menu") 
 
 <br>
 
 
-@ rstudio screen shot here
+@ R Studio 
 
 * Code
 * Console
@@ -163,7 +164,7 @@ If needed, for more instructions on how to install R and RStudio click [here](ht
 
 <br>
 
-@ script 1 (console and script)
+@ script 1 
 
 * operators 
 * objects
@@ -171,7 +172,7 @@ If needed, for more instructions on how to install R and RStudio click [here](ht
 
 <br>
 
-@ script 2 (console, then in script file)
+@ script 2 
   
 * R packages
 * read data
@@ -189,6 +190,7 @@ If needed, for more instructions on how to install R and RStudio click [here](ht
 
 # Concepts for possible future sessions
 
+* R Projects
 * options for installing packages
 * working with paths and folders
 * data type precedence

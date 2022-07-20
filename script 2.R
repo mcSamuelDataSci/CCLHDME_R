@@ -1,11 +1,12 @@
 
-# Reading in data ----
+# Almost any type of data can be read into R 
 
-# .Rdata files
 # .csv files  - read.csv (base); read_csv (readr package)
-# .xlsx
-# .txt
-# .sas7dat - haven package...
+# .xlsx       - read_xlsx (readxl package)   
+# .txt        - read.table (base)  
+# .sas7dat    - read_sas (haven package) 
+
+
 
 # Read in data ----
 idData <- read.csv("https://bit.ly/cali-id") # Read in csv file
