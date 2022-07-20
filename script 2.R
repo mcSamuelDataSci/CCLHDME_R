@@ -1,25 +1,5 @@
 
-
-# PACKAGES 
-
-how to load packages
-
-
-load packages...
-
-
-library("outbreaks")
-
-
-
-# library(janitor)
-# clean_names()
-# library(lubridate)
-
-
-
-
-# Reading in data:
+# Reading in data ----
 
 # .Rdata files
 # .csv files  - read.csv (base); read_csv (readr package)
@@ -27,30 +7,35 @@ library("outbreaks")
 # .txt
 # .sas7dat - haven package...
 
-# also....some data are "already in R" or in R packages....
-
 # Read in data ----
 idData <- read.csv("https://bit.ly/cali-id") # Read in csv file
 
-view....
+View(idData) # View the dataset in RStudio
 
-# Get some data
-library("outbreaks")
+# Installing and loading in packages ----
+
+# Two ways to install a package:
+# 1) Go to 'Packages' tab in bottom-right pane -> Install -> Type package name
+# 2) use `install.packages()` function
+
+# ONLY NEED TO RUN ONCE
+install.packages("outbreaks")
+
+# Must run this every time a new session is created. Loads package
+library(outbreaks)
+
+# Dataset from outbreaks packages - Learn more about this dataset here:
+# https://www.reconverse.org/outbreaks/reference/ebola_sierraleone_2014.html
 full_data <- ebola_sierraleone_2014  
 
-
-
-
-# examine the data
-
-
+# Common functions for examining the data ----
 
 head(full_data) # Print out first few rows
 View(full_data) # View the data frame
 #str(full_data) # View the structure
 names(full_data) # View the column names
 
-min(full_data$age)  # Minimum
+min(full_data$age, na.rm = TRUE)  # Minimum
 table(full_data$district) # Frequency table
 
 

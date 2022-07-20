@@ -7,9 +7,9 @@ a <- 8 * 6
 a
 A # R is case-sensitive
 
-ratePer <- 1000
-(5 / 5000) * ratePer
-(4 / 2000) * ratePer
+a * 2
+a * a 
+a <- 57
 
 # Data classes ----
 
@@ -26,8 +26,8 @@ TRUE
 FALSE
 True
 false
-T
-F
+T # Equivalent to TRUE
+F # Equivalent to FALSE
 
 # Data structures - Vectors ----
 
@@ -45,11 +45,11 @@ vectorNum + vectorNum
 
 
 # Functions ----
-mean(vectorNum)
+mean(vectorNum) # Compute the mean
 
-vectorNum <- c(3, 7, 2, 9, 12, NA) # Numeric vector
+vectorNum <- c(3, 7, 2, 9, 12, NA) # NA = Not Available
 vectorNum
 
-mean(vectorNum)
-?mean
-mean(vectorNum, na.rm = TRUE)
+mean(vectorNum) # Returns NA
+?mean # View Documentation
+mean(vectorNum, na.rm = TRUE) # Set `na.rm` argument to TRUE to remove NA values before computing the mean
