@@ -7,9 +7,11 @@ a <- 8 * 6
 a
 A # R is case-sensitive
 
+# Math operations on objects
 a * 2
 a * a 
-a <- 57
+
+a <- 57 # Overwrite object
 
 # Data classes ----
 
