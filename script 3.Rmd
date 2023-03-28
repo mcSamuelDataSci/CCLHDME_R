@@ -131,5 +131,26 @@ gt(rate_data)
 ```
 
 
+<br>
 
+# Same table, differnt package
+
+
+```{r}
+library(kableExtra)
+kable(rate_data) %>% 
+  kable_styling(latex_options = "striped") %>%
+  column_spec(7, bold=TRUE)
+```
+
+
+<br>
+
+# Same table, another package
+
+
+
+```{r}
+DT::datatable(rate_data)
+```
 

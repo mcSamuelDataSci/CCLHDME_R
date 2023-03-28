@@ -1,5 +1,6 @@
 ---
 title: "Rapidfire R Introduction for Public Health"
+subtitle: for Harris County Public Health
 output: 
   html_document:
     theme: sandstone
