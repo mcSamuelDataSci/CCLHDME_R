@@ -1,20 +1,15 @@
 ---
-title: "Script 3"
-author: "Jaspreet Kang"
+title: "Example Report - Script 3"
+author: "CDPH"
 date: "`r Sys.Date()`"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-# Load packages
-```{r}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message=FALSE)
 
 library(dplyr) # data wrangling
 library(zoo)  # date manipulation
-library(summarytools) # frequencies, cross tabs, summaries
 library(ggplot2) # visualization
 
 # Other useful packages ----------------------
@@ -25,31 +20,23 @@ library(ggplot2) # visualization
 
 ```
 
-# Data wrangling using tidyverse - dplyr
-```{r}
+<br>
+
+# This document and report includes
+
+- r code for reading and organizing data
+- charts
+- lots more can be added
+
+
+And many types of text *can be* added **anywhere**
+
+
+```{r, organize-data}
 
 library("outbreaks") # outbreak data sets
 # get "built-in" data set from outbreak package
 full_data <- ebola_sierraleone_2014  
-
-view(dfSummary(full_data)) # from summarytools package
-
-
-# *filter* rows based on condition
-just_confirmed <- filter(full_data, status == "confirmed")    
-just_confirmed <- full_data %>% filter(status == "confirmed") 
-
-# *select* columns and rename a couple at the same time
-just_some_variables <- full_data %>% 
-                        select(age, status, onset = date_of_onset, district )
-
-
-# *mutate* to create new variables
-# as.yearmon() function from zoo package
-full_data_plus  <- full_data %>%
-                    mutate(onset_yr_mo = as.yearmon(date_of_onset))  
-
-
 
 # "piping" the steps above into one step with %>%
 good_data  <- full_data %>% 
@@ -57,25 +44,44 @@ good_data  <- full_data %>%
                  select(age, status, onset = date_of_onset, district ) %>%
                  mutate(onset_yr_mo = as.yearmon(onset))  
 
-
-
 # grouping by (group_by) district 
 # count cases in each district with summarize
 district_data <- good_data  %>% 
                    group_by(district) %>%
                    summarize(N   = n())
 
-# simple chart with base R
-barplot(district_data$N, names.arg= district_data$district)
 
-# pretty simple bar chart with ggplot
+```
+
+<br><br>
+
+# Simple
+
+## chart
+
+## with base R
+
+```{r}
+barplot(district_data$N, names.arg= district_data$district)
+```
+
+<br>
+
+# Pretty simple bar chart with ggplot
+
+```{r}
+
 ggplot(data=district_data, aes(x=district, y = N)) + # core ggplot set up
    geom_bar(stat="identity", fill="darkblue") +      # geom = what type of plot
    coord_flip() +                                    # "horizontal" bar chart
    labs(y="Number of Confirmed Cases")               # axis label
 
+```
 
 
+# Line chart
+
+```{r}
 # grouping by (group_by) district and year-month 
 district_time_data  <- good_data %>% 
   group_by(district, onset_yr_mo) %>%
@@ -86,10 +92,23 @@ ggplot(data=district_time_data, aes(x=onset_yr_mo, y = N, color=district )) +
        geom_line(size=1.2)
 
 
+
+
+
+```
+
+
+# Line chart with "facets"
+
+```{r}
 ggplot(data=district_time_data, aes(x=onset_yr_mo, y = N)) + 
   geom_line(size=1) +
   facet_grid(rows=vars(district), scales="free")
+```
 
+
+
+```{r}
 # read in Sierra Leone population data
 pop_dat <- read.csv("sierra_leone.csv")
 
@@ -99,3 +118,18 @@ rate_data  <- full_join(district_data, pop_dat, by= c("district" = "District")) 
                 mutate(Rate = N*100000/Population)
 
 ```
+
+<br><br>
+
+# Table
+
+
+
+```{r}
+library(gt)
+gt(rate_data)
+```
+
+
+
+
