@@ -1,5 +1,5 @@
 ---
-title: "Rapidfire R Introduction for Public Health"
+title: "CCLHDME R Introduction"
 output: 
   html_document:
     theme: sandstone
@@ -32,9 +32,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-This document serves as a guide and tool for the R Workshop. And it provides a way to share learning materials and other resources.
+This document serves as a very general guide and tool for the CCLHDME R Workshop. And it provides a way to share learning materials and other resources.
 
-The workshop learning approach is live demonstration, with participants then doing the same steps using the materials later. There are many different approaches, resources, styles, and preferences for learning R (or anything?).
+The workshop learning approach is live demonstration, with participants then doing the same steps live, as possible. Or just watching, and looking at the materials later. There are many different approaches, resources, styles, and preferences for learning R (or anything?).
+
 
 
 
@@ -119,7 +120,15 @@ The workshop learning approach is live demonstration, with participants then doi
 <br>
 <hr>
 
+# Workshop materials
 
+not essential but helpful....
+
+1. Download R_CCLHDME.zip from email and unzip in folder of your choosing, OR
+2. Go to this [GitHub repo](https://github.com/mcSamuelDataSci/CCLHDME_R), click on "Code" (green button), download zip folder, and unzip in folder of your choosing, OR
+3. Go to Michael's [Google drive](https://drive.google.com/drive/folders/16TNHsuO_7MBptRCftp-mEfRfOhYkvTT-?usp=sharing) and download all files to folder of your choosing
+
+<br>
 
 # Installing R and R Studio
 
@@ -136,14 +145,9 @@ If needed, for more instructions on how to install R and RStudio click [here](ht
 
 <br>
 
+# Just Do It!
 
-# Workshop materials
 
-
-1. Go to this [GitHub repo](https://github.com/mcSamuelDataSci/CCLHDME_R), click on "Code" (green button), download zip folder, and unzip in folder of your choosing, OR
-2. Go to Michael's [Google drive](https://drive.google.com/drive/folders/16TNHsuO_7MBptRCftp-mEfRfOhYkvTT-?usp=sharing) and download all files to folder of your choosing
-
-<br>
 
 @ Studio and workshop files
 
@@ -187,35 +191,26 @@ If needed, for more instructions on how to install R and RStudio click [here](ht
 
 <br>
 
-@ script 4 - an R markdown script (.Rmd not .R) 
-
-* install more  packages
-
-
-<br>
-
-
-
-# Other key concepts 
+# Concepts for possible future sessions
 
 * R Projects
 * options for installing packages
 * working with paths and folders
 * data type precedence
-* rules and best practices for naming objects
+* Rules and best practices for naming objects
 * more R object types
   *  data.frames and tibbles
   *  lists 
   *  class()
 * sub-setting/indexing
-* user built functions
+* User built functions
 * R markdown
   * [Example of report produced in R markdown](https://skylab.cdph.ca.gov/communityBurden/_w_21945fed/xMDA/2020_Excess_Mortality.html)
 * ifelse() and other logical evaluation
 * tables
 * advanced data manipulation
 * epidemiologic statistics and modeling
-* Shiny
+* shiny
 * GIS
 * shiny with GIS
 * thousands of other packages
@@ -235,14 +230,11 @@ If needed, for more instructions on how to install R and RStudio click [here](ht
 * apply and loops
 
 
-<br><br>
-
-
-```{r}
-height <- rnorm(n=100, mean= 60, sd = 6)
-weight <- height*1.2 +  rnorm(n=100, mean= 10, sd = 6)
-hist(height, breaks=50)
-plot(height, weight)
-```
+<!-- ```{r} -->
+<!-- height <- rnorm(n=100, mean= 60, sd = 6) -->
+<!-- weight <- height*1.2 +  rnorm(n=100, mean= 10, sd = 6) -->
+<!-- hist(height, breaks=50) -->
+<!-- plot(height, weight) -->
+<!-- ``` -->
 
 
