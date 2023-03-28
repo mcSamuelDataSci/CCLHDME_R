@@ -57,9 +57,9 @@ district_data <- good_data  %>%
 
 # Simple
 
-## chart
+### chart
 
-## with base R
+#### with base R
 
 ```{r}
 barplot(district_data$N, names.arg= district_data$district)
